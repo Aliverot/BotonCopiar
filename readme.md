@@ -38,7 +38,7 @@ Se declaran dos atributos:
 - Estos dos MouseAdapter gestionan el comportamiento del menú emergente.
 - Primer MouseAdapter:
   - En el evento mouseClicked, el menú se oculta al hacer clic en cualquier lugar fuera del botón.
--Segundo MouseAdapter:
+- Segundo MouseAdapter:
   - En mouseReleased, se llama a mostrarMenu para abrir el menú emergente solo si hay texto seleccionado.
   
 # Video
