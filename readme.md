@@ -40,7 +40,25 @@ Se declaran dos atributos:
   - En el evento mouseClicked, el menú se oculta al hacer clic en cualquier lugar fuera del botón.
 - Segundo MouseAdapter:
   - En mouseReleased, se llama a mostrarMenu para abrir el menú emergente solo si hay texto seleccionado.
-  
+ 
+![image](https://github.com/user-attachments/assets/b2c4c5ac-3a14-4155-82bc-eb453b4e8c3b)
+
+7. Método mostrarMenu:
+- Muestra el menú emergente (menuEmergente) en la posición del ratón cuando hay texto seleccionado.
+- getSelectedText(): Devuelve el texto actualmente seleccionado en el área de texto.
+- menuEmergente.show(this, eventoRaton.getX(), eventoRaton.getY()): Coloca el menú emergente en las coordenadas X e Y del evento de ratón dentro del componente AreaBotonEmergente.
+
+![image](https://github.com/user-attachments/assets/caa5e7a2-ca7b-481a-805b-94d283e3767c)
+
+8. Método copiarPortapapeles:
+- Copia el texto seleccionado al portapapeles del sistema.
+- Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard(): Obtiene el portapapeles del sistema.
+- StringSelection selection = new StringSelection(texto): Convierte el texto en un objeto StringSelection que es compatible con el portapapeles.
+- clipboard.setContents(selection, null): Copia el texto al portapapeles.
+- Después de copiar, el menú emergente se oculta con menuEmergente.setVisible(false).
+
+![image](https://github.com/user-attachments/assets/3ffc5bcf-d1e9-41fb-8e69-f645449b8d5c)
+
 # Video
 https://github.com/user-attachments/assets/aafe63a1-e09c-4d20-b1d0-be73ea7f31d0
 
