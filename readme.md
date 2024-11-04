@@ -37,9 +37,9 @@ Se declaran dos atributos:
 6. Escuchar eventos del ratón:
 - Estos dos MouseAdapter gestionan el comportamiento del menú emergente.
 - Primer MouseAdapter:
--- En el evento mouseClicked, el menú se oculta al hacer clic en cualquier lugar fuera del botón.
+  - En el evento mouseClicked, el menú se oculta al hacer clic en cualquier lugar fuera del botón.
 -Segundo MouseAdapter:
--- En mouseReleased, se llama a mostrarMenu para abrir el menú emergente solo si hay texto seleccionado.
+  - En mouseReleased, se llama a mostrarMenu para abrir el menú emergente solo si hay texto seleccionado.
   
 # Video
 https://github.com/user-attachments/assets/aafe63a1-e09c-4d20-b1d0-be73ea7f31d0
